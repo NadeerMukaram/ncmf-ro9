@@ -11,6 +11,7 @@
 	
 	<!-- entry-content -->
 	<div class="entry-content">
+	<h1 class="entry-title" style="margin-bottom:40px; border-bottom: 2px solid #000; padding-bottom: 5px;"><?php the_title(); ?></h1>
 		<div class="entry-meta">
 			<?php gwt_wp_posted_on(); ?>
 			<p></p>

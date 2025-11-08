@@ -792,7 +792,6 @@ function govph_displayoptions( $options ){
       '<div id="textlogo-wrapper">
         <div id="textlogo-image"><img alt="'.(isset($option['govph_agency_name']) ? $option['govph_agency_name'] : '').' Official Logo" src="'.$logo_image.'" height="100px" width="100px"/></div>
         <div id="textlogo-inner-wrapper">
-          <div id="agency-heading">Republic of the Philippines</div>
           <div id="agency-name">'.(isset($option['govph_agency_name']) ? $option['govph_agency_name'] : '').'</div>
           <div id="agency-tagline">'.(isset($option['govph_agency_tagline']) ? $option['govph_agency_tagline'] : '').'</div>
         </div>

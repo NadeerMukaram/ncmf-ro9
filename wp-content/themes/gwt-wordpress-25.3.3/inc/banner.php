@@ -115,7 +115,7 @@ if(!is_home()){
 				<div class="large-9 columns container-main">
 					<header>
 						<?php while ( have_posts() ) : the_post(); ?>
-							<h1 class="entry-title"><?php the_title(); ?></h1>
+							
 						<?php endwhile; // end of the loop. ?>
 					</header>
 				</div>
