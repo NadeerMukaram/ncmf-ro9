@@ -10,7 +10,8 @@
 	position: fixed;
 	top: 0;
 	bottom: -120px;
-	z-index: 1; /* positive z-index to avoid elastic scrolling woes in Safari */
+	z-index: 1;
+	/* positive z-index to avoid elastic scrolling woes in Safari */
 
 	/* Only visible in Windows High Contrast mode */
 	outline: 1px solid transparent;
@@ -101,7 +102,7 @@
 }
 
 #adminmenu a:hover,
-#adminmenu li.menu-top > a:focus,
+#adminmenu li.menu-top>a:focus,
 #adminmenu .wp-submenu a:hover,
 #adminmenu .wp-submenu a:focus {
 	color: #72aee6;
@@ -135,12 +136,12 @@
 
 .js #adminmenu .sub-open,
 .js #adminmenu .opensub .wp-submenu,
-#adminmenu a.menu-top:focus + .wp-submenu,
+#adminmenu a.menu-top:focus+.wp-submenu,
 .no-js li.wp-has-submenu:hover .wp-submenu {
 	top: -1px;
 }
 
-#adminmenu a.wp-has-current-submenu:focus + .wp-submenu {
+#adminmenu a.wp-has-current-submenu:focus+.wp-submenu {
 	top: 0;
 }
 
@@ -165,23 +166,23 @@
 
 /* ensure that wp-submenu's box shadow doesn't appear on top of the focused menu item's background. */
 #adminmenu li.menu-top:hover,
-#adminmenu li.opensub > a.menu-top,
-#adminmenu li > a.menu-top:focus {
+#adminmenu li.opensub>a.menu-top,
+#adminmenu li>a.menu-top:focus {
 	position: relative;
 	background-color: #1d2327;
 	color: #72aee6;
 }
 
 .folded #adminmenu li.menu-top:hover,
-.folded #adminmenu li.opensub > a.menu-top,
-.folded #adminmenu li > a.menu-top:focus {
+.folded #adminmenu li.opensub>a.menu-top,
+.folded #adminmenu li>a.menu-top:focus {
 	z-index: 10000;
 }
 
 #adminmenu li.wp-has-current-submenu a.wp-has-current-submenu,
 #adminmenu li.current a.menu-top,
 #adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head {
-	background: #2271b1;
+	background: #2d7a3e;
 	color: #fff;
 }
 
@@ -189,14 +190,14 @@
 .folded #adminmenu .opensub .wp-submenu,
 .folded #adminmenu .wp-has-current-submenu .wp-submenu.sub-open,
 .folded #adminmenu .wp-has-current-submenu.opensub .wp-submenu,
-.folded #adminmenu a.menu-top:focus + .wp-submenu,
-.folded #adminmenu .wp-has-current-submenu a.menu-top:focus + .wp-submenu,
+.folded #adminmenu a.menu-top:focus+.wp-submenu,
+.folded #adminmenu .wp-has-current-submenu a.menu-top:focus+.wp-submenu,
 .no-js.folded #adminmenu .wp-has-submenu:hover .wp-submenu {
 	top: 0;
 	left: 36px;
 }
 
-.folded #adminmenu a.wp-has-current-submenu:focus + .wp-submenu,
+.folded #adminmenu a.wp-has-current-submenu:focus+.wp-submenu,
 .folded #adminmenu .wp-has-current-submenu .wp-submenu {
 	position: absolute;
 	top: -1000em;
@@ -213,22 +214,22 @@
 #adminmenu .wp-submenu li.current,
 #adminmenu .wp-submenu li.current a,
 #adminmenu .opensub .wp-submenu li.current a,
-#adminmenu a.wp-has-current-submenu:focus + .wp-submenu li.current a,
+#adminmenu a.wp-has-current-submenu:focus+.wp-submenu li.current a,
 #adminmenu .wp-submenu li.current a:hover,
 #adminmenu .wp-submenu li.current a:focus {
 	color: #fff;
 }
 
-#adminmenu .wp-not-current-submenu li > a,
-.folded #adminmenu .wp-has-current-submenu li > a {
+#adminmenu .wp-not-current-submenu li>a,
+.folded #adminmenu .wp-has-current-submenu li>a {
 	padding-right: 16px;
 	padding-left: 14px;
 	/* Exclude from the transition the outline for Windows High Contrast mode */
 	transition: all .1s ease-in-out, outline 0s;
 }
 
-#adminmenu .wp-has-current-submenu ul > li > a,
-.folded #adminmenu li.menu-top .wp-submenu > li > a {
+#adminmenu .wp-has-current-submenu ul>li>a,
+.folded #adminmenu li.menu-top .wp-submenu>li>a {
 	padding: 5px 12px;
 }
 
@@ -336,7 +337,7 @@ ul#adminmenu a.wp-has-current-submenu {
 }
 
 ul#adminmenu a.wp-has-current-submenu:after,
-ul#adminmenu > li.current > a.current:after {
+ul#adminmenu>li.current>a.current:after {
 	right: 0;
 	border: solid 8px transparent;
 	content: " ";
@@ -355,7 +356,7 @@ ul#adminmenu > li.current > a.current:after {
 }
 
 .folded ul#adminmenu a.wp-has-current-submenu:after,
-.folded ul#adminmenu > li a.current:after {
+.folded ul#adminmenu>li a.current:after {
 	border-width: 4px;
 	margin-top: -4px;
 }
@@ -544,6 +545,7 @@ li#wp-admin-bar-menu-toggle {
 
 /* Auto-folding of the admin menu */
 @media only screen and (max-width: 960px) {
+
 	.auto-fold #wpcontent,
 	.auto-fold #wpfooter {
 		margin-left: 36px;
@@ -560,13 +562,13 @@ li#wp-admin-bar-menu-toggle {
 	.auto-fold #adminmenu .opensub .wp-submenu,
 	.auto-fold #adminmenu .wp-has-current-submenu .wp-submenu.sub-open,
 	.auto-fold #adminmenu .wp-has-current-submenu.opensub .wp-submenu,
-	.auto-fold #adminmenu a.menu-top:focus + .wp-submenu,
-	.auto-fold #adminmenu .wp-has-current-submenu a.menu-top:focus + .wp-submenu {
+	.auto-fold #adminmenu a.menu-top:focus+.wp-submenu,
+	.auto-fold #adminmenu .wp-has-current-submenu a.menu-top:focus+.wp-submenu {
 		top: 0;
 		left: 36px;
 	}
 
-	.auto-fold #adminmenu a.wp-has-current-submenu:focus + .wp-submenu,
+	.auto-fold #adminmenu a.wp-has-current-submenu:focus+.wp-submenu,
 	.auto-fold #adminmenu .wp-has-current-submenu .wp-submenu {
 		position: absolute;
 		top: -1000em;
@@ -582,13 +584,13 @@ li#wp-admin-bar-menu-toggle {
 		border-left-width: 5px;
 	}
 
-	.auto-fold #adminmenu .wp-has-current-submenu li > a {
+	.auto-fold #adminmenu .wp-has-current-submenu li>a {
 		padding-right: 16px;
 		padding-left: 14px;
 	}
 
 
-	.auto-fold #adminmenu li.menu-top .wp-submenu > li > a {
+	.auto-fold #adminmenu li.menu-top .wp-submenu>li>a {
 		padding-left: 12px;
 	}
 
@@ -633,14 +635,14 @@ li#wp-admin-bar-menu-toggle {
 	}
 
 	.auto-fold ul#adminmenu a.wp-has-current-submenu:after,
-	.auto-fold ul#adminmenu > li a.current:after {
+	.auto-fold ul#adminmenu>li a.current:after {
 		border-width: 4px;
 		margin-top: -4px;
 	}
 
 	.auto-fold #adminmenu li.menu-top:hover,
-	.auto-fold #adminmenu li.opensub > a.menu-top,
-	.auto-fold #adminmenu li > a.menu-top:focus {
+	.auto-fold #adminmenu li.opensub>a.menu-top,
+	.auto-fold #adminmenu li>a.menu-top:focus {
 		z-index: 10000;
 	}
 
@@ -705,7 +707,7 @@ li#wp-admin-bar-menu-toggle {
 		padding: 5px;
 	}
 
-	.auto-fold #adminmenu li.menu-top .wp-submenu > li > a {
+	.auto-fold #adminmenu li.menu-top .wp-submenu>li>a {
 		padding: 10px 10px 10px 20px;
 	}
 
@@ -716,7 +718,7 @@ li#wp-admin-bar-menu-toggle {
 
 	/* Switch the arrow side */
 	.auto-fold ul#adminmenu a.wp-has-current-submenu:after,
-	.auto-fold ul#adminmenu > li.current > a.current:after {
+	.auto-fold ul#adminmenu>li.current>a.current:after {
 		border-width: 8px;
 		margin-top: -8px;
 	}
@@ -759,8 +761,8 @@ li#wp-admin-bar-menu-toggle {
 		display: block;
 	}
 
-	.auto-fold #adminmenu a.menu-top:focus + .wp-submenu,
-	.auto-fold #adminmenu .wp-has-current-submenu a.menu-top:focus + .wp-submenu {
+	.auto-fold #adminmenu a.menu-top:focus+.wp-submenu,
+	.auto-fold #adminmenu .wp-has-current-submenu a.menu-top:focus+.wp-submenu {
 		position: relative;
 		left: -1px;
 		right: 0;
@@ -839,6 +841,7 @@ li#wp-admin-bar-menu-toggle {
 
 /* Smartphone */
 @media screen and (max-width: 600px) {
+
 	#adminmenuwrap,
 	#adminmenuback {
 		display: none;

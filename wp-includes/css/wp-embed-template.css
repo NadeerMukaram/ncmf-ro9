@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
 	padding: 0;
 	margin: 0;
 }
@@ -163,7 +164,7 @@ p.wp-embed-heading {
 
 .wp-embed-meta a:hover {
 	text-decoration: none;
-	color: #2271b1;
+	color: #2d7a3e;
 }
 
 .wp-embed-comments a {
@@ -171,7 +172,7 @@ p.wp-embed-heading {
 	display: inline-block;
 }
 
-.wp-embed-comments + .wp-embed-share {
+.wp-embed-comments+.wp-embed-share {
 	margin-left: 10px;
 }
 
@@ -214,7 +215,7 @@ p.wp-embed-heading {
 
 .wp-embed-share-dialog-open:focus .dashicons,
 .wp-embed-share-dialog-close:focus .dashicons {
-	box-shadow: 0 0 0 2px #2271b1;
+	box-shadow: 0 0 0 2px #2d7a3e;
 	/* Only visible in Windows High Contrast mode */
 	outline: 2px solid transparent;
 	border-radius: 100%;
@@ -278,7 +279,7 @@ p.wp-embed-heading {
 	color: #fff;
 }
 
-.wp-embed-share-tab-button + .wp-embed-share-tab-button {
+.wp-embed-share-tab-button+.wp-embed-share-tab-button {
 	margin: 0 0 0 10px;
 	padding: 0 0 0 11px;
 	border-left: 1px solid #a7aaad;
@@ -347,7 +348,7 @@ html[dir="rtl"] .wp-embed-share-dialog-close {
 	left: 20px;
 }
 
-html[dir="rtl"] .wp-embed-share-tab-button + .wp-embed-share-tab-button {
+html[dir="rtl"] .wp-embed-share-tab-button+.wp-embed-share-tab-button {
 	margin: 0 10px 0 0;
 	padding: 0 11px 0 0;
 	border-left: none;

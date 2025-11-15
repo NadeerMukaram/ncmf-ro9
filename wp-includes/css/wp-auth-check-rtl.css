@@ -16,7 +16,8 @@
 	background: #000;
 	opacity: 0.7;
 	filter: alpha(opacity=70);
-	z-index: 1000010; /* needs to appear above .notification-dialog */
+	z-index: 1000010;
+	/* needs to appear above .notification-dialog */
 }
 
 #wp-auth-check-wrap #wp-auth-check {
@@ -30,7 +31,8 @@
 	margin: 0 -190px 0 0;
 	padding: 30px 0 0;
 	background-color: #f0f0f1;
-	z-index: 1000011; /* needs to appear above #wp-auth-check-bg */
+	z-index: 1000011;
+	/* needs to appear above #wp-auth-check-bg */
 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
 }
 
@@ -69,7 +71,7 @@
 }
 
 @media print,
-  (min-resolution: 120dpi) {
+(min-resolution: 120dpi) {
 
 	#wp-auth-check-form.loading:before {
 		background-image: url(../images/spinner-2x.gif);
@@ -78,7 +80,8 @@
 }
 
 #wp-auth-check-wrap #wp-auth-check-form iframe {
-	height: 98%; /* Scrollbar fix */
+	height: 98%;
+	/* Scrollbar fix */
 	width: 100%;
 }
 
@@ -103,7 +106,7 @@
 
 #wp-auth-check-wrap .wp-auth-check-close:hover,
 #wp-auth-check-wrap .wp-auth-check-close:focus {
-	color: #2271b1;
+	color: #2d7a3e;
 }
 
 #wp-auth-check-wrap .wp-auth-fallback-expired {

@@ -17,7 +17,7 @@ body {
 }
 
 a {
-	color: #2271b1;
+	color: #2d7a3e;
 }
 
 a:hover,
@@ -27,12 +27,13 @@ a:active {
 
 a:focus {
 	color: #043959;
-	box-shadow: 0 0 0 2px #2271b1;
+	box-shadow: 0 0 0 2px #2d7a3e;
 	/* Only visible in Windows High Contrast mode */
 	outline: 2px solid transparent;
 }
 
-h1, h2 {
+h1,
+h2 {
 	border-bottom: 1px solid #dcdcde;
 	clear: both;
 	color: #646970;
@@ -45,23 +46,30 @@ h3 {
 	font-size: 16px;
 }
 
-p, li, dd, dt {
+p,
+li,
+dd,
+dt {
 	padding-bottom: 2px;
 	font-size: 14px;
 	line-height: 1.5;
 }
 
-code, .code {
+code,
+.code {
 	font-family: Consolas, Monaco, monospace;
 }
 
-ul, ol, dl {
+ul,
+ol,
+dl {
 	padding: 5px 22px 5px 5px;
 }
 
 a img {
 	border: 0
 }
+
 abbr {
 	border: 0;
 	font-variant: normal;
@@ -84,7 +92,8 @@ fieldset {
 	background-size: 84px;
 	background-position: center top;
 	background-repeat: no-repeat;
-	color: #3c434a; /* same as login.css */
+	color: #3c434a;
+	/* same as login.css */
 	font-size: 20px;
 	font-weight: 400;
 	line-height: 1.3em;
@@ -97,13 +106,17 @@ fieldset {
 .step {
 	margin: 20px 0 15px;
 }
-.step, th {
+
+.step,
+th {
 	text-align: right;
 	padding: 0;
 }
+
 .language-chooser.wp-core-ui .step .button.button-large {
 	font-size: 14px;
 }
+
 textarea {
 	border: 1px solid #dcdcde;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
@@ -209,7 +222,8 @@ submit {
 	margin: 25px 0 20px;
 }
 
-#error-page code, .code {
+#error-page code,
+.code {
 	font-family: Consolas, Monaco, monospace;
 }
 
@@ -252,6 +266,7 @@ body.rtl,
 	body {
 		margin-top: 115px;
 	}
+
 	#logo a {
 		margin: -125px auto 30px;
 	}
@@ -386,7 +401,7 @@ body.language-chooser {
  * HiDPI Displays
  */
 @media print,
-  (min-resolution: 120dpi) {
+(min-resolution: 120dpi) {
 
 	.spinner {
 		background-image: url(../images/spinner-2x.gif);

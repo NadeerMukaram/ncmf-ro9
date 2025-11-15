@@ -4,7 +4,7 @@
 	margin-top: 30px;
 }
 
-#customize-theme-controls #accordion-section-menu_locations > .accordion-section-title {
+#customize-theme-controls #accordion-section-menu_locations>.accordion-section-title {
 	border-bottom-color: #dcdcde;
 	margin-top: 15px;
 }
@@ -159,7 +159,8 @@
 }
 
 .customize-control input.menu-name-field {
-	width: 100%; /* Override the 98% default for customizer inputs, to align with the size of menu items. */
+	width: 100%;
+	/* Override the 98% default for customizer inputs, to align with the size of menu items. */
 }
 
 .wp-customizer .menu-item .item-edit {
@@ -266,7 +267,7 @@
 #customize-controls .customize-info.open.active-menu-screen-options .customize-help-toggle:hover,
 #customize-controls .customize-info.open.active-menu-screen-options .customize-help-toggle:active,
 #customize-controls .customize-info.open.active-menu-screen-options .customize-help-toggle:focus {
-	color: #2271b1;
+	color: #2d7a3e;
 }
 
 .customize-screen-options-toggle:focus,
@@ -316,7 +317,8 @@
 }
 
 .rtl .wp-customizer .toggle-indicator {
-	text-indent: 1px; /* account for the dashicon alignment */
+	text-indent: 1px;
+	/* account for the dashicon alignment */
 }
 
 .wp-customizer .menu-item .item-edit .toggle-indicator:before,
@@ -350,73 +352,250 @@
 }
 
 /* WARNING: The 20px factor is hard-coded in JS. */
-.menu-item-depth-0  { margin-right: 0;     }
-.menu-item-depth-1  { margin-right: 20px;  }
-.menu-item-depth-2  { margin-right: 40px;  }
-.menu-item-depth-3  { margin-right: 60px;  }
-.menu-item-depth-4  { margin-right: 80px;  }
-.menu-item-depth-5  { margin-right: 100px; }
-.menu-item-depth-6  { margin-right: 120px; }
-.menu-item-depth-7  { margin-right: 140px; }
-.menu-item-depth-8  { margin-right: 160px; } /* Not likely to be used or useful beyond this depth */
-.menu-item-depth-9  { margin-right: 180px; }
-.menu-item-depth-10 { margin-right: 200px; }
-.menu-item-depth-11 { margin-right: 220px; }
+.menu-item-depth-0 {
+	margin-right: 0;
+}
+
+.menu-item-depth-1 {
+	margin-right: 20px;
+}
+
+.menu-item-depth-2 {
+	margin-right: 40px;
+}
+
+.menu-item-depth-3 {
+	margin-right: 60px;
+}
+
+.menu-item-depth-4 {
+	margin-right: 80px;
+}
+
+.menu-item-depth-5 {
+	margin-right: 100px;
+}
+
+.menu-item-depth-6 {
+	margin-right: 120px;
+}
+
+.menu-item-depth-7 {
+	margin-right: 140px;
+}
+
+.menu-item-depth-8 {
+	margin-right: 160px;
+}
+
+/* Not likely to be used or useful beyond this depth */
+.menu-item-depth-9 {
+	margin-right: 180px;
+}
+
+.menu-item-depth-10 {
+	margin-right: 200px;
+}
+
+.menu-item-depth-11 {
+	margin-right: 220px;
+}
 
 /* @todo handle .menu-item-settings width */
-.menu-item-depth-0  > .menu-item-bar { margin-left: 0;     }
-.menu-item-depth-1  > .menu-item-bar { margin-left: 20px;  }
-.menu-item-depth-2  > .menu-item-bar { margin-left: 40px;  }
-.menu-item-depth-3  > .menu-item-bar { margin-left: 60px;  }
-.menu-item-depth-4  > .menu-item-bar { margin-left: 80px;  }
-.menu-item-depth-5  > .menu-item-bar { margin-left: 100px; }
-.menu-item-depth-6  > .menu-item-bar { margin-left: 120px; }
-.menu-item-depth-7  > .menu-item-bar { margin-left: 140px; }
-.menu-item-depth-8  > .menu-item-bar { margin-left: 160px; }
-.menu-item-depth-9  > .menu-item-bar { margin-left: 180px; }
-.menu-item-depth-10 > .menu-item-bar { margin-left: 200px; }
-.menu-item-depth-11 > .menu-item-bar { margin-left: 220px; }
+.menu-item-depth-0>.menu-item-bar {
+	margin-left: 0;
+}
+
+.menu-item-depth-1>.menu-item-bar {
+	margin-left: 20px;
+}
+
+.menu-item-depth-2>.menu-item-bar {
+	margin-left: 40px;
+}
+
+.menu-item-depth-3>.menu-item-bar {
+	margin-left: 60px;
+}
+
+.menu-item-depth-4>.menu-item-bar {
+	margin-left: 80px;
+}
+
+.menu-item-depth-5>.menu-item-bar {
+	margin-left: 100px;
+}
+
+.menu-item-depth-6>.menu-item-bar {
+	margin-left: 120px;
+}
+
+.menu-item-depth-7>.menu-item-bar {
+	margin-left: 140px;
+}
+
+.menu-item-depth-8>.menu-item-bar {
+	margin-left: 160px;
+}
+
+.menu-item-depth-9>.menu-item-bar {
+	margin-left: 180px;
+}
+
+.menu-item-depth-10>.menu-item-bar {
+	margin-left: 200px;
+}
+
+.menu-item-depth-11>.menu-item-bar {
+	margin-left: 220px;
+}
 
 /* Submenu left margin. */
-.menu-item-depth-0  .menu-item-transport { margin-right: 0;      }
-.menu-item-depth-1  .menu-item-transport { margin-right: -20px;  }
-.menu-item-depth-3  .menu-item-transport { margin-right: -60px;  }
-.menu-item-depth-4  .menu-item-transport { margin-right: -80px;  }
-.menu-item-depth-2  .menu-item-transport { margin-right: -40px;  }
-.menu-item-depth-5  .menu-item-transport { margin-right: -100px; }
-.menu-item-depth-6  .menu-item-transport { margin-right: -120px; }
-.menu-item-depth-7  .menu-item-transport { margin-right: -140px; }
-.menu-item-depth-8  .menu-item-transport { margin-right: -160px; }
-.menu-item-depth-9  .menu-item-transport { margin-right: -180px; }
-.menu-item-depth-10 .menu-item-transport { margin-right: -200px; }
-.menu-item-depth-11 .menu-item-transport { margin-right: -220px; }
+.menu-item-depth-0 .menu-item-transport {
+	margin-right: 0;
+}
+
+.menu-item-depth-1 .menu-item-transport {
+	margin-right: -20px;
+}
+
+.menu-item-depth-3 .menu-item-transport {
+	margin-right: -60px;
+}
+
+.menu-item-depth-4 .menu-item-transport {
+	margin-right: -80px;
+}
+
+.menu-item-depth-2 .menu-item-transport {
+	margin-right: -40px;
+}
+
+.menu-item-depth-5 .menu-item-transport {
+	margin-right: -100px;
+}
+
+.menu-item-depth-6 .menu-item-transport {
+	margin-right: -120px;
+}
+
+.menu-item-depth-7 .menu-item-transport {
+	margin-right: -140px;
+}
+
+.menu-item-depth-8 .menu-item-transport {
+	margin-right: -160px;
+}
+
+.menu-item-depth-9 .menu-item-transport {
+	margin-right: -180px;
+}
+
+.menu-item-depth-10 .menu-item-transport {
+	margin-right: -200px;
+}
+
+.menu-item-depth-11 .menu-item-transport {
+	margin-right: -220px;
+}
 
 /* WARNING: The 20px factor is hard-coded in JS. */
-.reordering .menu-item-depth-0  { margin-right: 0;     }
-.reordering .menu-item-depth-1  { margin-right: 15px;  }
-.reordering .menu-item-depth-2  { margin-right: 30px;  }
-.reordering .menu-item-depth-3  { margin-right: 45px;  }
-.reordering .menu-item-depth-4  { margin-right: 60px;  }
-.reordering .menu-item-depth-5  { margin-right: 75px;  }
-.reordering .menu-item-depth-6  { margin-right: 90px;  }
-.reordering .menu-item-depth-7  { margin-right: 105px; }
-.reordering .menu-item-depth-8  { margin-right: 120px; } /* Not likely to be used or useful beyond this depth */
-.reordering .menu-item-depth-9  { margin-right: 135px; }
-.reordering .menu-item-depth-10 { margin-right: 150px; }
-.reordering .menu-item-depth-11 { margin-right: 165px; }
+.reordering .menu-item-depth-0 {
+	margin-right: 0;
+}
 
-.reordering .menu-item-depth-0  > .menu-item-bar { margin-left: 0;     }
-.reordering .menu-item-depth-1  > .menu-item-bar { margin-left: 15px;  }
-.reordering .menu-item-depth-2  > .menu-item-bar { margin-left: 30px;  }
-.reordering .menu-item-depth-3  > .menu-item-bar { margin-left: 45px;  }
-.reordering .menu-item-depth-4  > .menu-item-bar { margin-left: 60px;  }
-.reordering .menu-item-depth-5  > .menu-item-bar { margin-left: 75px;  }
-.reordering .menu-item-depth-6  > .menu-item-bar { margin-left: 90px;  }
-.reordering .menu-item-depth-7  > .menu-item-bar { margin-left: 105px; }
-.reordering .menu-item-depth-8  > .menu-item-bar { margin-left: 120px; }
-.reordering .menu-item-depth-9  > .menu-item-bar { margin-left: 135px; }
-.reordering .menu-item-depth-10 > .menu-item-bar { margin-left: 150px; }
-.reordering .menu-item-depth-11 > .menu-item-bar { margin-left: 165px; }
+.reordering .menu-item-depth-1 {
+	margin-right: 15px;
+}
+
+.reordering .menu-item-depth-2 {
+	margin-right: 30px;
+}
+
+.reordering .menu-item-depth-3 {
+	margin-right: 45px;
+}
+
+.reordering .menu-item-depth-4 {
+	margin-right: 60px;
+}
+
+.reordering .menu-item-depth-5 {
+	margin-right: 75px;
+}
+
+.reordering .menu-item-depth-6 {
+	margin-right: 90px;
+}
+
+.reordering .menu-item-depth-7 {
+	margin-right: 105px;
+}
+
+.reordering .menu-item-depth-8 {
+	margin-right: 120px;
+}
+
+/* Not likely to be used or useful beyond this depth */
+.reordering .menu-item-depth-9 {
+	margin-right: 135px;
+}
+
+.reordering .menu-item-depth-10 {
+	margin-right: 150px;
+}
+
+.reordering .menu-item-depth-11 {
+	margin-right: 165px;
+}
+
+.reordering .menu-item-depth-0>.menu-item-bar {
+	margin-left: 0;
+}
+
+.reordering .menu-item-depth-1>.menu-item-bar {
+	margin-left: 15px;
+}
+
+.reordering .menu-item-depth-2>.menu-item-bar {
+	margin-left: 30px;
+}
+
+.reordering .menu-item-depth-3>.menu-item-bar {
+	margin-left: 45px;
+}
+
+.reordering .menu-item-depth-4>.menu-item-bar {
+	margin-left: 60px;
+}
+
+.reordering .menu-item-depth-5>.menu-item-bar {
+	margin-left: 75px;
+}
+
+.reordering .menu-item-depth-6>.menu-item-bar {
+	margin-left: 90px;
+}
+
+.reordering .menu-item-depth-7>.menu-item-bar {
+	margin-left: 105px;
+}
+
+.reordering .menu-item-depth-8>.menu-item-bar {
+	margin-left: 120px;
+}
+
+.reordering .menu-item-depth-9>.menu-item-bar {
+	margin-left: 135px;
+}
+
+.reordering .menu-item-depth-10>.menu-item-bar {
+	margin-left: 150px;
+}
+
+.reordering .menu-item-depth-11>.menu-item-bar {
+	margin-left: 165px;
+}
 
 .control-section-nav_menu.menu .menu-item-edit-active {
 	margin-right: 0;
@@ -498,7 +677,8 @@
  */
 
 #available-menu-items.opening {
-	overflow-y: hidden; /* avoid scrollbar jitter with animating heights */
+	overflow-y: hidden;
+	/* avoid scrollbar jitter with animating heights */
 }
 
 #available-menu-items #available-menu-items-search.open {
@@ -539,7 +719,8 @@
 
 #available-menu-items .available-menu-items-list {
 	overflow-y: auto;
-	max-height: 200px; /* This gets set in JS to fit the screen size, and based on # of sections. */
+	max-height: 200px;
+	/* This gets set in JS to fit the screen size, and based on # of sections. */
 	background: transparent;
 }
 
@@ -559,7 +740,7 @@
 
 #available-menu-items .accordion-section-title .no-items,
 #available-menu-items .cannot-expand .accordion-section-title .spinner,
-#available-menu-items .cannot-expand .accordion-section-title > button:not(#available-menu-items-search button.is-visible) {
+#available-menu-items .cannot-expand .accordion-section-title>button:not(#available-menu-items-search button.is-visible) {
 	display: none;
 }
 
@@ -587,7 +768,8 @@
 	padding: 1px 15px 15px;
 }
 
-#available-menu-items .accordion-section-content .available-menu-items-list:only-child { /* Types that do not support new items for the current user */
+#available-menu-items .accordion-section-content .available-menu-items-list:only-child {
+	/* Types that do not support new items for the current user */
 	margin-bottom: 0;
 }
 
@@ -660,7 +842,8 @@
 	display: inline-block;
 	height: 20px;
 	border-radius: 50%;
-	font: normal 20px/1.05 dashicons; /* line height is to account for the dashicon's vertical alignment */
+	font: normal 20px/1.05 dashicons;
+	/* line height is to account for the dashicon's vertical alignment */
 }
 
 #available-menu-items .menu-item-handle.item-added .item-type,
@@ -682,7 +865,8 @@
 
 #available-menu-items-search .spinner {
 	position: absolute;
-	bottom: 20px; /* 13 container padding +1 input margin +6 ( ( 32 input height - 20 spinner height ) / 2 ) */
+	bottom: 20px;
+	/* 13 container padding +1 input margin +6 ( ( 32 input height - 20 spinner height ) / 2 ) */
 	left: 21px;
 	margin: 0 !important;
 }
@@ -691,8 +875,10 @@
 #available-menu-items #available-menu-items-search .accordion-section-content {
 	position: absolute;
 	right: 0;
-	top: 75px; /* below title div / search input */
-	bottom: 0; /* 100% height that still triggers lazy load */
+	top: 75px;
+	/* below title div / search input */
+	bottom: 0;
+	/* 100% height that still triggers lazy load */
 	max-height: none;
 	width: 100%;
 	padding: 1px 15px 15px;
@@ -770,7 +956,8 @@ body.adding-menu-items #customize-preview iframe {
 .added-menu-item .menu-item-handle {
 	transition-property: opacity, background, color;
 	transition-duration: 1.25s;
-	transition-timing-function: cubic-bezier( .25, -2.5, .75, 8 ); /* Replacement for .hide().fadeIn('slow') in JS to add emphasis when it's loaded. */
+	transition-timing-function: cubic-bezier(.25, -2.5, .75, 8);
+	/* Replacement for .hide().fadeIn('slow') in JS to add emphasis when it's loaded. */
 }
 
 /* Add/delete Menus */
@@ -823,6 +1010,7 @@ li.assigned-to-menu-location .add-new-menu-item {
 .menu-item-handle {
 	margin-top: -1px;
 }
+
 .ui-sortable-disabled .menu-item-handle {
 	cursor: default;
 }
@@ -830,13 +1018,13 @@ li.assigned-to-menu-location .add-new-menu-item {
 .menu-item-handle:hover {
 	position: relative;
 	z-index: 10;
-	color: #2271b1;
+	color: #2d7a3e;
 }
 
 .menu-item-handle:hover .item-type,
 .menu-item-handle:hover .item-edit,
 #available-menu-items .menu-item-handle:hover .item-add {
-	color: #2271b1;
+	color: #2d7a3e;
 }
 
 .menu-item-edit-active .menu-item-handle {
@@ -868,7 +1056,7 @@ li.assigned-to-menu-location .add-new-menu-item {
 .menu-delete:focus,
 .menu-item-bar .item-delete:focus:before,
 #available-menu-items .item-add:focus:before {
-	box-shadow: 0 0 0 2px #2271b1;
+	box-shadow: 0 0 0 2px #2d7a3e;
 	/* Only visible in Windows High Contrast mode */
 	outline: 2px solid transparent;
 }

@@ -40,14 +40,14 @@
 	background-color: #fff;
 }
 
-.revisions-tickmarks > div {
+.revisions-tickmarks>div {
 	position: absolute;
 	height: 100%;
 	border-right: 1px solid #a7aaad;
 	box-sizing: border-box;
 }
 
-.revisions-tickmarks > div:first-child {
+.revisions-tickmarks>div:first-child {
 	border-width: 0;
 }
 
@@ -76,9 +76,9 @@
 	vertical-align: middle;
 	opacity: 0;
 	width: 100%;
-	width: calc( 100% - 30px );
+	width: calc(100% - 30px);
 	top: 50%;
-	top: calc( 50% - 10px );
+	top: calc(50% - 10px);
 	transition: opacity 0.5s;
 }
 
@@ -364,7 +364,7 @@ table.diff .diff-addedline ins {
 	left: 0;
 }
 
-.revisions-tooltip-arrow > span {
+.revisions-tooltip-arrow>span {
 	content: "";
 	position: absolute;
 	right: 20px;
@@ -374,13 +374,13 @@ table.diff .diff-addedline ins {
 	transform: rotate(-45deg);
 }
 
-.revisions-tooltip.flipped .revisions-tooltip-arrow > span {
+.revisions-tooltip.flipped .revisions-tooltip-arrow>span {
 	right: auto;
 	left: 20px;
 }
 
 .revisions-tooltip,
-.revisions-tooltip-arrow > span {
+.revisions-tooltip-arrow>span {
 	border: 1px solid #dcdcde;
 	background-color: #fff;
 }
@@ -431,11 +431,11 @@ table.diff .diff-addedline ins {
 	border-style: solid;
 }
 
-div.revisions-controls > .wp-slider > .ui-slider-handle {
+div.revisions-controls>.wp-slider>.ui-slider-handle {
 	margin-right: -10px;
 }
 
-.rtl div.revisions-controls > .wp-slider > .ui-slider-handle {
+.rtl div.revisions-controls>.wp-slider>.ui-slider-handle {
 	margin-left: -10px;
 }
 
@@ -483,7 +483,7 @@ div.revisions-controls > .wp-slider > .ui-slider-handle {
 .wp-slider .ui-slider-handle.ui-state-focus {
 	background: #f0f0f1;
 	border-color: #8c8f94;
-	box-shadow: 0 0 0 2px #2271b1;
+	box-shadow: 0 0 0 2px #2d7a3e;
 	/* Only visible in Windows High Contrast mode */
 	outline: 2px solid transparent;
 }
@@ -567,7 +567,7 @@ div.revisions-controls > .wp-slider > .ui-slider-handle {
  * HiDPI Displays
  */
 @media print,
-  (min-resolution: 120dpi) {
+(min-resolution: 120dpi) {
 	.revision-tick.completed-false {
 		background-image: url(../images/spinner-2x.gif);
 	}
@@ -596,6 +596,7 @@ div.revisions-controls > .wp-slider > .ui-slider-handle {
 }
 
 @media screen and (max-width: 782px) {
+
 	#diff-next-revision,
 	#diff-previous-revision {
 		margin-top: -1em;

@@ -38,7 +38,7 @@ body {
 	line-height: 1.5;
 	overflow-y: auto;
 	text-align: left;
-	top: calc( 50% - 100px );
+	top: calc(50% - 100px);
 }
 
 #customize-controls #customize-notifications-area .notice.notification-overlay.notification-changeset-locked .customize-changeset-locked-message.has-avatar {
@@ -48,6 +48,7 @@ body {
 #customize-controls #customize-notifications-area .notice.notification-overlay.notification-changeset-locked .currently-editing {
 	margin-top: 0;
 }
+
 #customize-controls #customize-notifications-area .notice.notification-overlay.notification-changeset-locked .action-buttons {
 	margin-bottom: 0;
 }
@@ -76,15 +77,19 @@ body {
 body:not(.ready) #customize-save-button-wrapper .save {
 	visibility: hidden;
 }
+
 #customize-save-button-wrapper .save {
 	float: left;
 	border-radius: 3px;
-	box-shadow: none; /* @todo Adjust box shadow based on the disable states of paired button. */
+	box-shadow: none;
+	/* @todo Adjust box shadow based on the disable states of paired button. */
 	margin-top: 0;
 }
 
-#customize-save-button-wrapper .save:focus, #publish-settings:focus {
-	box-shadow: 0 1px 0 #2271b1, 0 0 2px 1px #72aee6; /* This is default box shadow for focus */
+#customize-save-button-wrapper .save:focus,
+#publish-settings:focus {
+	box-shadow: 0 1px 0 #2d7a3e, 0 0 2px 1px #72aee6;
+	/* This is default box shadow for focus */
 }
 
 #customize-save-button-wrapper .save.has-next-sibling {
@@ -169,7 +174,8 @@ body:not(.ready) #customize-save-button-wrapper .save {
 	border-radius: 0 3px 3px 0;
 	padding-left: 0;
 	padding-right: 0;
-	box-shadow: none; /* @todo Adjust box shadow based on the disable states of paired button. */
+	box-shadow: none;
+	/* @todo Adjust box shadow based on the disable states of paired button. */
 	font-size: 14px;
 	width: 30px;
 	float: left;
@@ -227,11 +233,13 @@ body.trashing #publish-settings {
 #customize-control-trash_changeset {
 	margin-top: 20px;
 }
+
 #customize-control-trash_changeset .button-link {
 	position: relative;
 	padding-left: 24px;
 	display: inline-block;
 }
+
 #customize-control-trash_changeset .button-link:before {
 	content: "\f182";
 	font: normal 22px dashicons;
@@ -301,7 +309,8 @@ body.trashing #publish-settings {
 }
 
 #customize-control-changeset_preview_link input {
-	line-height: 2.85714286; /* 40px */
+	line-height: 2.85714286;
+	/* 40px */
 	border-top: 1px solid #dcdcde;
 	border-left: none;
 	border-right: none;
@@ -346,7 +355,7 @@ body.trashing #publish-settings {
 	margin-bottom: 15px;
 }
 
-.customize-control-date_time .customize-control-description + .date-time-fields.includes-time {
+.customize-control-date_time .customize-control-description+.date-time-fields.includes-time {
 	margin-top: 10px;
 }
 
@@ -418,7 +427,7 @@ body.trashing #publish-settings {
 	margin-top: 0;
 }
 
-#customize-controls .customize-info.is-in-view + .accordion-section {
+#customize-controls .customize-info.is-in-view+.accordion-section {
 	margin-top: 15px;
 }
 
@@ -499,7 +508,7 @@ body.trashing #publish-settings {
 #customize-controls .customize-info.open .customize-help-toggle,
 #customize-controls .customize-info .customize-help-toggle:focus,
 #customize-controls .customize-info .customize-help-toggle:hover {
-	color: #2271b1;
+	color: #2d7a3e;
 }
 
 #customize-controls .customize-info .customize-panel-description,
@@ -513,15 +522,18 @@ body.trashing #publish-settings {
 	border-top: 1px solid #dcdcde;
 }
 
-#customize-controls .customize-info .customize-panel-description.open + .no-widget-areas-rendered-notice {
+#customize-controls .customize-info .customize-panel-description.open+.no-widget-areas-rendered-notice {
 	border-top: none;
 }
+
 .no-widget-areas-rendered-notice {
 	font-style: italic;
 }
+
 .no-widget-areas-rendered-notice p:first-child {
 	margin-top: 0;
 }
+
 .no-widget-areas-rendered-notice p:last-child {
 	margin-bottom: 0;
 }
@@ -540,7 +552,7 @@ body.trashing #publish-settings {
 	margin-bottom: 0;
 }
 
-#customize-controls .current-panel .control-section > h3.accordion-section-title {
+#customize-controls .current-panel .control-section>h3.accordion-section-title {
 	padding-right: 30px;
 }
 
@@ -562,7 +574,7 @@ body.trashing #publish-settings {
 }
 
 .accordion-section-title:has(button.accordion-trigger),
-#customize-controls .current-panel .control-section > h3.accordion-section-title:has(button.accordion-trigger) {
+#customize-controls .current-panel .control-section>h3.accordion-section-title:has(button.accordion-trigger) {
 	padding: 0;
 }
 
@@ -580,6 +592,7 @@ body.trashing #publish-settings {
 }
 
 @media (prefers-reduced-motion: reduce) {
+
 	#customize-theme-controls .accordion-section-title,
 	#customize-outer-theme-controls .accordion-section-title {
 		transition: none;
@@ -605,16 +618,16 @@ body.trashing #publish-settings {
 	background: transparent;
 }
 
-#customize-controls .control-section:hover > .accordion-section-title,
+#customize-controls .control-section:hover>.accordion-section-title,
 #customize-controls .control-section .accordion-section-title button:hover,
 #customize-controls .control-section.open .accordion-section-title,
 #customize-controls .control-section .accordion-section-title button:focus {
-	color: #2271b1;
+	color: #2d7a3e;
 	background: #f6f7f7;
-	border-left-color: #2271b1;
+	border-left-color: #2d7a3e;
 }
 
-#accordion-section-themes + .control-section {
+#accordion-section-themes+.control-section {
 	border-top: 1px solid #dcdcde;
 }
 
@@ -625,15 +638,15 @@ body.trashing #publish-settings {
 	background: #f6f7f7;
 }
 
-#customize-theme-controls .control-section:hover > .accordion-section-title:after,
+#customize-theme-controls .control-section:hover>.accordion-section-title:after,
 #customize-theme-controls .control-section .accordion-section-title:hover:after,
 #customize-theme-controls .control-section.open .accordion-section-title:after,
 #customize-theme-controls .control-section .accordion-section-title:focus:after,
-#customize-outer-theme-controls .control-section:hover > .accordion-section-title:after,
+#customize-outer-theme-controls .control-section:hover>.accordion-section-title:after,
 #customize-outer-theme-controls .control-section .accordion-section-title:hover:after,
 #customize-outer-theme-controls .control-section.open .accordion-section-title:after,
 #customize-outer-theme-controls .control-section .accordion-section-title:focus:after {
-	color: #2271b1;
+	color: #2d7a3e;
 }
 
 #customize-theme-controls .control-section.open {
@@ -646,7 +659,7 @@ body.trashing #publish-settings {
 }
 
 #customize-theme-controls .control-section:last-of-type.open,
-#customize-theme-controls .control-section:last-of-type > .accordion-section-title {
+#customize-theme-controls .control-section:last-of-type>.accordion-section-title {
 	border-bottom-color: #dcdcde;
 }
 
@@ -656,11 +669,11 @@ body.trashing #publish-settings {
 	border-top: 1px solid #dcdcde;
 }
 
-#customize-theme-controls .control-panel-nav_menus .control-section-nav_menu + .control-section-nav_menu {
+#customize-theme-controls .control-panel-nav_menus .control-section-nav_menu+.control-section-nav_menu {
 	border-top: none;
 }
 
-#customize-theme-controls > ul {
+#customize-theme-controls>ul {
 	margin: 0;
 }
 
@@ -682,10 +695,12 @@ body.trashing #publish-settings {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	transition: 0.18s transform cubic-bezier(0.645, 0.045, 0.355, 1); /* easeInOutCubic */
+	transition: 0.18s transform cubic-bezier(0.645, 0.045, 0.355, 1);
+	/* easeInOutCubic */
 }
 
 @media (prefers-reduced-motion: reduce) {
+
 	#customize-info,
 	#customize-theme-controls .customize-pane-parent,
 	#customize-theme-controls .customize-pane-child {
@@ -850,7 +865,7 @@ h3.customize-section-title {
 		transition:
 			color .15s ease-in-out,
 			border-color .15s ease-in-out,
-			background .15s ease-in-out;	
+			background .15s ease-in-out;
 	}
 }
 
@@ -903,8 +918,8 @@ h3.customize-section-title {
 .customize-controls-preview-toggle:focus,
 .customize-controls-preview-toggle:hover {
 	background: #fff;
-	color: #2271b1;
-	border-top-color: #2271b1;
+	color: #2d7a3e;
+	border-top-color: #2d7a3e;
 	box-shadow: none;
 	/* Only visible in Windows High Contrast mode */
 	outline: 1px solid transparent;
@@ -920,9 +935,9 @@ h3.customize-section-title {
 .customize-panel-back:focus,
 .customize-section-back:hover,
 .customize-section-back:focus {
-	color: #2271b1;
+	color: #2d7a3e;
 	background: #f6f7f7;
-	border-left-color: #2271b1;
+	border-left-color: #2d7a3e;
 	box-shadow: none;
 	/* Only visible in Windows High Contrast mode */
 	outline: 2px solid transparent;
@@ -964,7 +979,7 @@ p.customize-section-description {
 	margin-left: 1em;
 }
 
-.customize-section-description ul > li {
+.customize-section-description ul>li {
 	list-style: disc;
 }
 
@@ -1063,7 +1078,7 @@ p.customize-section-description {
 	line-height: 1.6;
 }
 
-.customize-control-radio .customize-control-title + .customize-control-description {
+.customize-control-radio .customize-control-title+.customize-control-description {
 	margin-top: 7px;
 }
 
@@ -1176,7 +1191,8 @@ p.customize-section-description {
 	height: 100%;
 	position: absolute;
 }
-#customize-preview iframe + iframe {
+
+#customize-preview iframe+iframe {
 	visibility: hidden;
 }
 
@@ -1190,7 +1206,8 @@ p.customize-section-description {
  * Notifications
  */
 
-#customize-controls .customize-control-notifications-container { /* Scoped to #customize-controls for specificity over notification styles in common.css. */
+#customize-controls .customize-control-notifications-container {
+	/* Scoped to #customize-controls for specificity over notification styles in common.css. */
 	margin: 4px 0 8px;
 	padding: 0;
 	cursor: default;
@@ -1208,6 +1225,7 @@ p.customize-section-description {
 	padding: 9px 14px;
 	overflow: hidden;
 }
+
 #customize-controls .customize-control-notifications-container .notice.is-dismissible {
 	padding-right: 38px;
 }
@@ -1243,50 +1261,60 @@ p.customize-section-description {
 }
 
 #customize-controls #customize-notifications-area:not(.has-overlay-notifications),
-#customize-controls .customize-section-title > .customize-control-notifications-container:not(.has-overlay-notifications),
-#customize-controls .panel-meta > .customize-control-notifications-container:not(.has-overlay-notifications) {
+#customize-controls .customize-section-title>.customize-control-notifications-container:not(.has-overlay-notifications),
+#customize-controls .panel-meta>.customize-control-notifications-container:not(.has-overlay-notifications) {
 	max-height: 210px;
 	overflow-x: hidden;
 	overflow-y: auto;
 }
 
-#customize-controls #customize-notifications-area > ul,
+#customize-controls #customize-notifications-area>ul,
 #customize-controls #customize-notifications-area .notice,
-#customize-controls .panel-meta > .customize-control-notifications-container,
-#customize-controls .panel-meta > .customize-control-notifications-container .notice,
-#customize-controls .customize-section-title > .customize-control-notifications-container,
-#customize-controls .customize-section-title > .customize-control-notifications-container .notice {
+#customize-controls .panel-meta>.customize-control-notifications-container,
+#customize-controls .panel-meta>.customize-control-notifications-container .notice,
+#customize-controls .customize-section-title>.customize-control-notifications-container,
+#customize-controls .customize-section-title>.customize-control-notifications-container .notice {
 	margin: 0;
 }
-#customize-controls .panel-meta > .customize-control-notifications-container,
-#customize-controls .customize-section-title > .customize-control-notifications-container {
+
+#customize-controls .panel-meta>.customize-control-notifications-container,
+#customize-controls .customize-section-title>.customize-control-notifications-container {
 	border-top: 1px solid #dcdcde;
 }
+
 #customize-controls #customize-notifications-area .notice,
-#customize-controls .panel-meta > .customize-control-notifications-container .notice,
-#customize-controls .customize-section-title > .customize-control-notifications-container .notice {
+#customize-controls .panel-meta>.customize-control-notifications-container .notice,
+#customize-controls .customize-section-title>.customize-control-notifications-container .notice {
 	padding: 9px 14px;
 }
+
 #customize-controls #customize-notifications-area .notice.is-dismissible,
-#customize-controls .panel-meta > .customize-control-notifications-container .notice.is-dismissible,
-#customize-controls .customize-section-title > .customize-control-notifications-container .notice.is-dismissible {
+#customize-controls .panel-meta>.customize-control-notifications-container .notice.is-dismissible,
+#customize-controls .customize-section-title>.customize-control-notifications-container .notice.is-dismissible {
 	padding-right: 38px;
 }
-#customize-controls #customize-notifications-area .notice + .notice,
-#customize-controls .panel-meta > .customize-control-notifications-container .notice + .notice,
-#customize-controls .customize-section-title > .customize-control-notifications-container .notice + .notice {
+
+#customize-controls #customize-notifications-area .notice+.notice,
+#customize-controls .panel-meta>.customize-control-notifications-container .notice+.notice,
+#customize-controls .customize-section-title>.customize-control-notifications-container .notice+.notice {
 	margin-top: 1px;
 }
 
 @keyframes customize-fade-in {
-	0%   { opacity: 0; }
-	100% { opacity: 1; }
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
 
 #customize-controls .notice.notification-overlay,
 #customize-controls #customize-notifications-area .notice.notification-overlay {
 	margin: 0;
-	border-left: 0; /* @todo Appropriate styles could be added for notice-error, notice-warning, notice-success, etc */
+	border-left: 0;
+	/* @todo Appropriate styles could be added for notice-error, notice-warning, notice-success, etc */
 }
 
 #customize-controls .customize-control-notifications-container.has-overlay-notifications {
@@ -1318,6 +1346,7 @@ p.customize-section-description {
 #customize-control-show_on_front.has-error {
 	margin-bottom: 0;
 }
+
 #customize-control-show_on_front.has-error .customize-control-notifications-container {
 	margin-top: 12px;
 }
@@ -1580,7 +1609,7 @@ p.customize-section-description {
 }
 
 .customize-control-header .placeholder:hover .dice,
-.customize-control-header .header-view:hover > button.random .dice {
+.customize-control-header .header-view:hover>button.random .dice {
 	animation: dice-color-change 3s infinite;
 }
 
@@ -1590,12 +1619,18 @@ p.customize-section-description {
 }
 
 @keyframes bounce {
-	from, 20%, 53%, 80%, to {
+
+	from,
+	20%,
+	53%,
+	80%,
+	to {
 		animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-		transform: translate3d(0,0,0);
+		transform: translate3d(0, 0, 0);
 	}
 
-	40%, 43% {
+	40%,
+	43% {
 		animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
 		transform: translate3d(0, -12px, 0);
 	}
@@ -1606,7 +1641,7 @@ p.customize-section-description {
 	}
 
 	90% {
-		transform: translate3d(0,-1px,0);
+		transform: translate3d(0, -1px, 0);
 	}
 }
 
@@ -1617,12 +1652,12 @@ p.customize-section-description {
 }
 
 .customize-control-header .choice:focus {
-	box-shadow: 0 0 0 2px #2271b1;
+	box-shadow: 0 0 0 2px #2d7a3e;
 	/* Only visible in Windows High Contrast mode */
 	outline: 2px solid transparent;
 }
 
-.customize-control-header .uploaded div:last-child > .choice {
+.customize-control-header .uploaded div:last-child>.choice {
 	margin-bottom: 0;
 }
 
@@ -1656,6 +1691,7 @@ p.customize-section-description {
 	padding: 6px 8px;
 	tab-size: 2;
 }
+
 .customize-control-code_editor textarea,
 .customize-control-code_editor .CodeMirror {
 	height: 14em;
@@ -1674,26 +1710,26 @@ p.customize-section-description {
 	height: 500px;
 }
 
-.customize-section-description-container + #customize-control-custom_css .customize-control-title {
+.customize-section-description-container+#customize-control-custom_css .customize-control-title {
 	margin-left: 12px;
 }
 
-.customize-section-description-container + #customize-control-custom_css:last-child textarea {
+.customize-section-description-container+#customize-control-custom_css:last-child textarea {
 	border-right: 0;
 	border-left: 0;
-	height: calc( 100vh - 185px );
+	height: calc(100vh - 185px);
 	resize: none;
 }
 
-.customize-section-description-container + #customize-control-custom_css:last-child {
+.customize-section-description-container+#customize-control-custom_css:last-child {
 	margin-left: -12px;
 	width: 299px;
-	width: calc( 100% + 24px );
+	width: calc(100% + 24px);
 	margin-bottom: -12px;
 }
 
-.customize-section-description-container + #customize-control-custom_css:last-child .CodeMirror {
-	height: calc( 100vh - 185px );
+.customize-section-description-container+#customize-control-custom_css:last-child .CodeMirror {
+	height: calc(100vh - 185px);
 }
 
 .CodeMirror-lint-tooltip,
@@ -1701,7 +1737,7 @@ p.customize-section-description {
 	z-index: 500000 !important;
 }
 
-.customize-section-description-container + #customize-control-custom_css:last-child .customize-control-notifications-container {
+.customize-section-description-container+#customize-control-custom_css:last-child .customize-control-notifications-container {
 	margin-left: 12px;
 	margin-right: 12px;
 }
@@ -1713,12 +1749,12 @@ p.customize-section-description {
 }
 
 @media screen and (max-width: 640px) {
-	.customize-section-description-container + #customize-control-custom_css:last-child {
+	.customize-section-description-container+#customize-control-custom_css:last-child {
 		margin-right: 0;
 	}
 
-	.customize-section-description-container + #customize-control-custom_css:last-child textarea {
-		height: calc( 100vh - 140px );
+	.customize-section-description-container+#customize-control-custom_css:last-child textarea {
+		height: calc(100vh - 140px);
 	}
 }
 
@@ -1730,8 +1766,9 @@ p.customize-section-description {
 	border-bottom: none;
 }
 
-#customize-theme-controls .control-panel-themes > .accordion-section-title:hover, /* Not a focusable element. */
-#customize-theme-controls .control-panel-themes > .accordion-section-title {
+#customize-theme-controls .control-panel-themes>.accordion-section-title:hover,
+/* Not a focusable element. */
+#customize-theme-controls .control-panel-themes>.accordion-section-title {
 	cursor: default;
 	background: #fff;
 	color: #50575e;
@@ -1740,16 +1777,19 @@ p.customize-section-description {
 	border-left: none;
 	border-right: none;
 	margin: 0 0 15px;
-	padding: 12px 100px 15px 15px; /* Space for the button */
+	padding: 12px 100px 15px 15px;
+	/* Space for the button */
 }
 
-#customize-theme-controls .control-section-themes .customize-themes-panel .accordion-section-title:first-child:hover, /* Not a focusable element. */
+#customize-theme-controls .control-section-themes .customize-themes-panel .accordion-section-title:first-child:hover,
+/* Not a focusable element. */
 #customize-theme-controls .control-section-themes .customize-themes-panel .accordion-section-title:first-child {
 	border-top: 0;
 }
 
-#customize-theme-controls .control-section-themes > .accordion-section-title:hover, /* Not a focusable element. */
-#customize-theme-controls .control-section-themes > .accordion-section-title {
+#customize-theme-controls .control-section-themes>.accordion-section-title:hover,
+/* Not a focusable element. */
+#customize-theme-controls .control-section-themes>.accordion-section-title {
 	margin: 0 0 15px;
 }
 
@@ -1760,7 +1800,8 @@ p.customize-section-description {
 
 #customize-controls .control-section-themes .accordion-section-title,
 #customize-controls .customize-themes-panel .accordion-section-title {
-	padding-right: 100px; /* Space for the button */
+	padding-right: 100px;
+	/* Space for the button */
 }
 
 .control-panel-themes .accordion-section-title span.customize-action,
@@ -1786,7 +1827,7 @@ p.customize-section-description {
 	font-weight: 400;
 }
 
-#customize-theme-controls .control-panel-themes > .accordion-section-title:after {
+#customize-theme-controls .control-panel-themes>.accordion-section-title:after {
 	display: none;
 }
 
@@ -1843,13 +1884,15 @@ p.customize-section-description {
 }
 
 .wp-full-overlay.in-themes-panel {
-	background: #f0f0f1; /* Prevents a black flash when fading in the panel */
+	background: #f0f0f1;
+	/* Prevents a black flash when fading in the panel */
 }
 
 .in-themes-panel #customize-save-button-wrapper,
 .in-themes-panel #customize-header-actions .spinner,
 .in-themes-panel #customize-header-actions .customize-controls-preview-toggle {
-	margin-top: -46px; /* Height of header actions bar */
+	margin-top: -46px;
+	/* Height of header actions bar */
 }
 
 .in-themes-panel #customize-footer-actions,
@@ -1900,7 +1943,7 @@ p.customize-section-description {
 
 .filter-drawer .filter-group {
 	margin: 0 25px 0 0;
-	width: calc( (100% - 75px) / 3);
+	width: calc((100% - 75px) / 3);
 	min-width: 200px;
 	max-width: 320px;
 }
@@ -1910,9 +1953,11 @@ p.customize-section-description {
 	0% {
 		opacity: 0;
 	}
+
 	50% {
 		opacity: 0;
 	}
+
 	100% {
 		opacity: 1;
 	}
@@ -1940,12 +1985,14 @@ p.customize-section-description {
 }
 
 .customize-themes-full-container .customize-themes-section {
-	display: none !important; /* There is unknown JS that perpetually tries to show all theme sections when more items are added. */
+	display: none !important;
+	/* There is unknown JS that perpetually tries to show all theme sections when more items are added. */
 	overflow: hidden;
 }
 
 .customize-themes-full-container .customize-themes-section.current-section {
-	display: list-item !important; /* There is unknown JS that perpetually tries to show all theme sections when more items are added. */
+	display: list-item !important;
+	/* There is unknown JS that perpetually tries to show all theme sections when more items are added. */
 }
 
 .control-section .customize-section-text-before {
@@ -1986,8 +2033,8 @@ p.customize-section-description {
 
 .control-panel-themes .customize-themes-section-title:focus,
 .control-panel-themes .customize-themes-section-title:hover {
-	border-left-color: #2271b1;
-	color: #2271b1;
+	border-left-color: #2d7a3e;
+	color: #2d7a3e;
 	background: #f6f7f7;
 }
 
@@ -2010,17 +2057,18 @@ p.customize-section-description {
 	box-sizing: border-box;
 	width: 20px;
 	height: 20px;
-	padding: 3px 3px 1px 1px; /* Re-align the icon to the smaller grid */
+	padding: 3px 3px 1px 1px;
+	/* Re-align the icon to the smaller grid */
 	border-radius: 100%;
 	position: absolute;
 	top: 9px;
 	right: 15px;
-	background: #2271b1;
+	background: #2d7a3e;
 	color: #fff;
 }
 
 .control-panel-themes .customize-themes-section-title.selected {
-	color: #2271b1;
+	color: #2d7a3e;
 }
 
 #customize-theme-controls .themes.accordion-section-content {
@@ -2048,7 +2096,8 @@ p.customize-section-description {
 }
 
 .themes-section-installed_themes .theme .notice-success:not(.updated-message) {
-	display: none; /* Hide "installed" notice on installed themes tab. */
+	display: none;
+	/* Hide "installed" notice on installed themes tab. */
 }
 
 .customize-control-theme .theme {
@@ -2058,15 +2107,18 @@ p.customize-section-description {
 	background: #fff;
 }
 
-.customize-control-theme .theme .theme-name, .customize-control-theme .theme .theme-actions {
+.customize-control-theme .theme .theme-name,
+.customize-control-theme .theme .theme-actions {
 	background: #fff;
 	border: none;
 }
 
-.customize-control.customize-control-theme { /* override most properties on .customize-control */
+.customize-control.customize-control-theme {
+	/* override most properties on .customize-control */
 	box-sizing: border-box;
 	width: 25%;
-	max-width: 600px; /* Max. screenshot size / 2 */
+	max-width: 600px;
+	/* Max. screenshot size / 2 */
 	margin: 0 25px 25px 0;
 	padding: 0;
 	clear: none;
@@ -2075,28 +2127,29 @@ p.customize-section-description {
 /* 5 columns above 2100px */
 @media screen and (min-width: 2101px) {
 	.customize-control.customize-control-theme {
-		width: calc( ( 100% - 125px ) / 5 - 1px ); /* 1px offset accounts for browser rounding, typical all grids */
+		width: calc((100% - 125px) / 5 - 1px);
+		/* 1px offset accounts for browser rounding, typical all grids */
 	}
 }
 
 /* 4 columns up to 2100px */
 @media screen and (min-width: 1601px) and (max-width: 2100px) {
 	.customize-control.customize-control-theme {
-		width: calc( ( 100% - 100px ) / 4 - 1px );
+		width: calc((100% - 100px) / 4 - 1px);
 	}
 }
 
 /* 3 columns up to 1600px */
 @media screen and (min-width: 1201px) and (max-width: 1600px) {
 	.customize-control.customize-control-theme {
-		width: calc( ( 100% - 75px ) / 3 - 1px );
+		width: calc((100% - 75px) / 3 - 1px);
 	}
 }
 
 /* 2 columns up to 1200px */
 @media screen and (min-width: 851px) and (max-width: 1200px) {
 	.customize-control.customize-control-theme {
-		width: calc( ( 100% - 50px ) / 2 - 1px );
+		width: calc((100% - 50px) / 2 - 1px);
 
 	}
 }
@@ -2137,6 +2190,7 @@ p.customize-section-description {
 	box-sizing: border-box;
 	border-bottom: 1px solid #dcdcde;
 }
+
 .customize-preview-header.themes-filter-bar,
 .customize-preview-header.themes-filter-bar .search-form {
 	display: flex;
@@ -2190,16 +2244,19 @@ p.customize-section-description {
 
 /* Unstick the filter bar on short windows/screens. This breakpoint is based on the
    current length of .org feature filters assuming translations do not wrap lines. */
-@media screen and (max-height: 540px), screen and (max-width: 1018px) {
+@media screen and (max-height: 540px),
+screen and (max-width: 1018px) {
 	.customize-preview-header.themes-filter-bar {
 		position: relative;
 		left: 0;
 		width: 100%;
 		margin: 0 0 25px;
 	}
+
 	.filter-drawer {
 		top: 46px;
 	}
+
 	.wp-customizer .theme-browser .themes {
 		padding: 0 0 25px 25px;
 		overflow: hidden;
@@ -2215,7 +2272,7 @@ p.customize-section-description {
 
 @media screen and (max-width: 1018px) {
 	.filter-drawer .filter-group {
-		width: calc( (100% - 50px) / 2);
+		width: calc((100% - 50px) / 2);
 	}
 }
 
@@ -2233,8 +2290,7 @@ p.customize-section-description {
 	}
 
 	.customize-preview-header.themes-filter-bar,
-	.customize-preview-header.themes-filter-bar .search-form
-	.themes-filter-bar .themes-filter-container {
+	.customize-preview-header.themes-filter-bar .search-form .themes-filter-bar .themes-filter-container {
 		display: grid;
 		gap: 4px;
 	}
@@ -2255,7 +2311,7 @@ p.customize-section-description {
 
 @media screen and (max-width: 792px) {
 	.filter-drawer .filter-group {
-		width: calc( 100% - 25px);
+		width: calc(100% - 25px);
 	}
 }
 
@@ -2324,9 +2380,9 @@ p.customize-section-description {
 
 	.wp-customizer .showing-themes .control-panel-themes .customize-themes-mobile-back:hover,
 	.wp-customizer .showing-themes .control-panel-themes .customize-themes-mobile-back:focus {
-		color: #2271b1;
+		color: #2d7a3e;
 		background: #f6f7f7;
-		border-left-color: #2271b1;
+		border-left-color: #2d7a3e;
 		box-shadow: none;
 		/* Only visible in Windows High Contrast mode */
 		outline: 2px solid transparent;
@@ -2392,7 +2448,8 @@ p.customize-section-description {
 }
 
 .wp-customizer .theme-overlay .theme-actions {
-	text-align: right; /* Because there're only one or two actions, match the UI pattern of media modals and right-align the action. */
+	text-align: right;
+	/* Because there're only one or two actions, match the UI pattern of media modals and right-align the action. */
 	padding: 10px 25px 5px;
 	background: #f0f0f1;
 	border-top: 1px solid #dcdcde;
@@ -2403,7 +2460,8 @@ p.customize-section-description {
 }
 
 .modal-open .in-themes-panel #customize-controls .wp-full-overlay-sidebar-content {
-	overflow: visible; /* Prevent the top-level Customizer controls from becoming visible when elements on the right of the details modal are focused. */
+	overflow: visible;
+	/* Prevent the top-level Customizer controls from becoming visible when elements on the right of the details modal are focused. */
 }
 
 .wp-customizer .theme-header {
@@ -2422,13 +2480,13 @@ p.customize-section-description {
 .wp-customizer .theme-overlay .theme-header .left:focus,
 .wp-customizer .theme-overlay .theme-header .left:hover {
 	background: #fff;
-	border-bottom: 4px solid #2271b1;
-	color: #2271b1;
+	border-bottom: 4px solid #2d7a3e;
+	color: #2d7a3e;
 }
 
 .wp-customizer .theme-overlay .theme-header .close:focus:before,
 .wp-customizer .theme-overlay .theme-header .close:hover:before {
-	color: #2271b1;
+	color: #2d7a3e;
 }
 
 .wp-customizer .theme-overlay .theme-header button.disabled,
@@ -2440,7 +2498,8 @@ p.customize-section-description {
 }
 
 /* Small Screens */
-@media (max-width: 850px), (max-height: 472px) {
+@media (max-width: 850px),
+(max-height: 472px) {
 	.wp-customizer .theme-overlay .theme-wrap {
 		left: 0;
 		right: 0;
@@ -2502,7 +2561,8 @@ body.cheatin p {
 .reordering .add-new-menu-item {
 	opacity: 0.2;
 	pointer-events: none;
-	cursor: not-allowed; /* doesn't work in conjunction with pointer-events */
+	cursor: not-allowed;
+	/* doesn't work in conjunction with pointer-events */
 }
 
 .add-new-widget:before,
@@ -2546,7 +2606,8 @@ body.cheatin p {
 	overflow: hidden;
 	float: left;
 	display: block;
-	width: 33px; /* was 42px for mobile */
+	width: 33px;
+	/* was 42px for mobile */
 	height: 43px;
 	color: #8c8f94;
 	text-indent: -9999px;
@@ -2612,7 +2673,8 @@ body.cheatin p {
  */
 
 .wp-full-overlay-main {
-	right: auto; /* this overrides a right: 0; which causes the preview to resize, I'd rather have it go off screen at the normal size. */
+	right: auto;
+	/* this overrides a right: 0; which causes the preview to resize, I'd rather have it go off screen at the normal size. */
 	width: 100%;
 }
 
@@ -2707,14 +2769,16 @@ body.adding-widget .add-new-widget:before,
 
 #available-widgets-filter input::-ms-clear,
 #available-menu-items-search input::-ms-clear {
-	display: none; /* remove the "x" in IE, which conflicts with the "x" icon on button.clear-results */
+	display: none;
+	/* remove the "x" in IE, which conflicts with the "x" icon on button.clear-results */
 }
 
 #available-menu-items-search .search-icon,
 #available-widgets-filter .search-icon {
 	display: block;
 	position: absolute;
-	bottom: 15px; /* 13 container padding +1 input margin +1 input border */
+	bottom: 15px;
+	/* 13 container padding +1 input margin +1 input border */
 	left: 16px;
 	width: 30px;
 	height: 30px;
@@ -2726,7 +2790,8 @@ body.adding-widget .add-new-widget:before,
 #available-widgets-filter .clear-results,
 #available-menu-items-search .accordion-section-title .clear-results {
 	position: absolute;
-	top: 36px; /* 13 container padding +1 input margin +1 input border */
+	top: 36px;
+	/* 13 container padding +1 input margin +1 input border */
 	right: 16px;
 	width: 30px;
 	height: 30px;
@@ -2768,7 +2833,7 @@ body.adding-widget .add-new-widget:before,
 
 #available-widgets-filter .clear-results:focus,
 #available-menu-items-search .clear-results:focus {
-	box-shadow: 0 0 0 2px #2271b1;
+	box-shadow: 0 0 0 2px #2d7a3e;
 	/* Only visible in Windows High Contrast mode */
 	outline: 2px solid transparent;
 }
@@ -2842,6 +2907,7 @@ body.adding-widget .add-new-widget:before,
 }
 
 @media only screen and (max-width: 782px) {
+
 	.wp-customizer .theme:not(.active):hover .theme-actions,
 	.wp-customizer .theme:not(.active):focus .theme-actions {
 		display: block;
@@ -2867,9 +2933,10 @@ body.adding-widget .add-new-widget:before,
 		margin-left: -32px;
 	}
 
-	.customize-control input[type="radio"] + label + br,
-	.customize-control input[type="checkbox"] + label + br {
-		line-height: 2.5; /* For widgets checkboxes */
+	.customize-control input[type="radio"]+label+br,
+	.customize-control input[type="checkbox"]+label+br {
+		line-height: 2.5;
+		/* For widgets checkboxes */
 	}
 
 	.customize-control .date-time-fields select {
@@ -2910,6 +2977,7 @@ body.adding-widget .add-new-widget:before,
 }
 
 @media screen and (max-width: 1200px) {
+
 	.outer-section-open .wp-full-overlay.expanded.preview-mobile .wp-full-overlay-main,
 	.adding-menu-items .wp-full-overlay.expanded.preview-mobile .wp-full-overlay-main,
 	.adding-widget .wp-full-overlay.expanded.preview-mobile .wp-full-overlay-main {

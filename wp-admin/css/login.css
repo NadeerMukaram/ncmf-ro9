@@ -15,7 +15,7 @@ body {
 }
 
 a {
-	color: #2271b1;
+	color: #2d7a3e;
 	transition-property: border, background, color;
 	transition-duration: .05s;
 	transition-timing-function: ease-in-out;
@@ -32,7 +32,7 @@ a:active {
 
 a:focus {
 	color: #043959;
-	box-shadow: 0 0 0 2px #2271b1;
+	box-shadow: 0 0 0 2px #2d7a3e;
 	/* Only visible in Windows High Contrast mode */
 	outline: 2px solid transparent;
 }
@@ -66,14 +66,15 @@ p {
 	list-style: none;
 }
 
-.login .login-error-list li + li {
+.login .login-error-list li+li {
 	margin-top: 4px;
 }
 
 #loginform p.submit,
 .login-action-lostpassword p.submit {
 	border: none;
-	margin: -10px 0 20px; /* May want to revisit this */
+	margin: -10px 0 20px;
+	/* May want to revisit this */
 }
 
 .login * {
@@ -149,7 +150,7 @@ p {
 }
 
 .login form.shake {
-	animation: shake 0.2s cubic-bezier(.19,.49,.38,.79) both;
+	animation: shake 0.2s cubic-bezier(.19, .49, .38, .79) both;
 	animation-iteration-count: 3;
 	transform: translateX(0);
 }
@@ -158,9 +159,11 @@ p {
 	25% {
 		transform: translateX(-20px);
 	}
+
 	75% {
 		transform: translateX(20px);
 	}
+
 	100% {
 		transform: translateX(0);
 	}
@@ -342,10 +345,12 @@ p {
 .login input[type="text"],
 .login input[type="password"] {
 	font-size: 24px;
-	line-height: 1.33333333; /* 32px */
+	line-height: 1.33333333;
+	/* 32px */
 	width: 100%;
 	border-width: 0.0625rem;
-	padding: 0.1875rem 0.3125rem; /* 3px 5px */
+	padding: 0.1875rem 0.3125rem;
+	/* 3px 5px */
 	margin: 0 6px 16px 0;
 	min-height: 40px;
 	max-height: none;
@@ -413,7 +418,8 @@ body.interim-login {
 	padding: 0;
 	position: absolute;
 	width: 1px;
-	word-wrap: normal !important; /* many screen reader and browser combinations announce broken words as they would appear visually */
+	word-wrap: normal !important;
+	/* many screen reader and browser combinations announce broken words as they would appear visually */
 }
 
 /* Hide the Edge "reveal password" native button */

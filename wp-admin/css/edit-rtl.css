@@ -437,6 +437,7 @@ form#tags-filter {
 .mce-fullscreen #wp-content-wrap .mce-wp-dfw {
 	display: none;
 }
+
 /* End TinyMCE native fullscreen mode override */
 
 #wp-content-editor-tools {
@@ -451,16 +452,23 @@ form#tags-filter {
 #timestampdiv select {
 	vertical-align: top;
 	font-size: 12px;
-	line-height: 2.33333333; /* 28px */
+	line-height: 2.33333333;
+	/* 28px */
 }
 
-#aa, #jj, #hh, #mn {
+#aa,
+#jj,
+#hh,
+#mn {
 	padding: 6px 1px;
 	font-size: 12px;
-	line-height: 1.16666666; /* 14px */
+	line-height: 1.16666666;
+	/* 14px */
 }
 
-#jj, #hh, #mn {
+#jj,
+#hh,
+#mn {
 	width: 2em;
 }
 
@@ -628,7 +636,7 @@ form#tags-filter {
 	position: absolute;
 }
 
-.tagchecklist > li {
+.tagchecklist>li {
 	float: right;
 	margin-left: 25px;
 	font-size: 13px;
@@ -651,8 +659,10 @@ form#tags-filter {
 	text-indent: 0;
 }
 
-#poststuff h3.hndle, /* Back-compat for pre-4.4 */
-#poststuff .stuffbox > h3, /* Back-compat for pre-4.4 */
+#poststuff h3.hndle,
+/* Back-compat for pre-4.4 */
+#poststuff .stuffbox>h3,
+/* Back-compat for pre-4.4 */
 #poststuff h2 {
 	font-size: 14px;
 	padding: 8px 12px;
@@ -664,7 +674,7 @@ form#tags-filter {
 	padding: 8px 10px;
 }
 
-#poststuff .stuffbox > h2 {
+#poststuff .stuffbox>h2 {
 	border-bottom: 1px solid #f0f0f1;
 }
 
@@ -701,7 +711,8 @@ form#tags-filter {
 	margin-top: 3px;
 }
 
-#linksubmitdiv .inside, /* Old Link Manager back-compat. */
+#linksubmitdiv .inside,
+/* Old Link Manager back-compat. */
 #poststuff #submitdiv .inside {
 	margin: 0;
 	padding: 0;
@@ -739,8 +750,8 @@ form#tags-filter {
 	margin: 25px 22px 15px 20px;
 }
 
-.privacy-settings .notice ~ .notice,
-.site-health .notice ~ .notice {
+.privacy-settings .notice~.notice,
+.site-health .notice~.notice {
 	margin-top: 5px;
 }
 
@@ -784,7 +795,8 @@ form#tags-filter {
 }
 
 .privacy-settings-tab {
-	display: block; /* IE 11 */
+	display: block;
+	/* IE 11 */
 	text-decoration: none;
 	color: inherit;
 	padding: 0.5rem 1rem 1rem;
@@ -794,12 +806,14 @@ form#tags-filter {
 
 .privacy-settings-tab:nth-child(1),
 .health-check-tab:nth-child(1) {
-	-ms-grid-column: 1; /* IE 11 */
+	-ms-grid-column: 1;
+	/* IE 11 */
 }
 
 .privacy-settings-tab:nth-child(2),
 .health-check-tab:nth-child(2) {
-	-ms-grid-column: 2; /* IE 11 */
+	-ms-grid-column: 2;
+	/* IE 11 */
 }
 
 .privacy-settings-tab:focus,
@@ -885,7 +899,7 @@ form#tags-filter {
 	border: none;
 	box-shadow: none;
 	outline-offset: -1px;
-	outline: 2px solid #2271b1;
+	outline: 2px solid #2d7a3e;
 	background-color: #f6f7f7;
 }
 
@@ -944,7 +958,7 @@ form#tags-filter {
 
 .privacy-settings-accordion-trigger .badge.purple,
 .health-check-accordion-trigger .badge.purple {
-	border: 1px solid #2271b1;
+	border: 1px solid #2d7a3e;
 }
 
 .privacy-settings-accordion-trigger .badge.gray,
@@ -993,13 +1007,15 @@ form#tags-filter {
 }
 
 /* Suggested text for privacy policy */
-.privacy-settings-accordion-panel.hide-privacy-policy-tutorial .wp-policy-help, /* For back-compat, see #49282 */
+.privacy-settings-accordion-panel.hide-privacy-policy-tutorial .wp-policy-help,
+/* For back-compat, see #49282 */
 .privacy-settings-accordion-panel.hide-privacy-policy-tutorial .privacy-policy-tutorial,
 .privacy-settings-accordion-panel.hide-privacy-policy-tutorial .privacy-text-copy {
 	display: none;
 }
 
-.privacy-settings-accordion-panel strong.wp-policy-help, /* For back-compat, see #49282 */
+.privacy-settings-accordion-panel strong.wp-policy-help,
+/* For back-compat, see #49282 */
 .privacy-settings-accordion-panel strong.privacy-policy-tutorial {
 	display: block;
 	margin: 0 0 1em;
@@ -1009,10 +1025,10 @@ form#tags-filter {
 	pointer-events: none;
 }
 
-.privacy-settings-accordion-panel .wp-suggested-text > *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(div):not(.privacy-policy-tutorial):not(.wp-policy-help):not(.privacy-text-copy):not(span.success):not(.notice p),
-.privacy-settings-accordion-panel .wp-suggested-text div > *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(div):not(.privacy-policy-tutorial):not(.wp-policy-help):not(.privacy-text-copy):not(span.success):not(.notice p),
-.privacy-settings-accordion-panel > *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(div):not(.privacy-policy-tutorial):not(.wp-policy-help):not(.privacy-text-copy):not(span.success):not(.notice p),
-.privacy-settings-accordion-panel div > *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(div):not(.privacy-policy-tutorial):not(.wp-policy-help):not(.privacy-text-copy):not(span.success):not(.notice p) {
+.privacy-settings-accordion-panel .wp-suggested-text>*:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(div):not(.privacy-policy-tutorial):not(.wp-policy-help):not(.privacy-text-copy):not(span.success):not(.notice p),
+.privacy-settings-accordion-panel .wp-suggested-text div>*:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(div):not(.privacy-policy-tutorial):not(.wp-policy-help):not(.privacy-text-copy):not(span.success):not(.notice p),
+.privacy-settings-accordion-panel>*:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(div):not(.privacy-policy-tutorial):not(.wp-policy-help):not(.privacy-text-copy):not(span.success):not(.notice p),
+.privacy-settings-accordion-panel div>*:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(div):not(.privacy-policy-tutorial):not(.wp-policy-help):not(.privacy-text-copy):not(span.success):not(.notice p) {
 	margin: 0;
 	padding: 1em;
 	border-right: 2px solid #787c82;
@@ -1309,10 +1325,11 @@ div.tabs-panel-inactive {
 }
 
 div.tabs-panel-active:focus {
-	box-shadow: inset 0 0 0 2px #2271b1;
+	box-shadow: inset 0 0 0 2px #2d7a3e;
 	/* Only visible in Windows High Contrast mode */
 	outline: 2px solid transparent;
 }
+
 .options-discussion-php .indent-children ul,
 #front-page-warning,
 #front-static-pages ul,
@@ -1492,7 +1509,7 @@ p.popular-tags a {
 
 .ac_results .ac_over,
 .ac_over .ac_match {
-	background-color: #2271b1;
+	background-color: #2d7a3e;
 	color: #fff;
 	cursor: pointer;
 }
@@ -1531,7 +1548,7 @@ p.popular-tags a {
 }
 
 .comment-ays .comment-content a[href]:after {
-	content: "(" attr( href ) ")";
+	content: "(" attr(href) ")";
 	display: inline-block;
 	padding: 0 4px;
 	color: #646970;
@@ -1636,10 +1653,10 @@ table.links-table {
 	display: inline-block;
 }
 
-.focus-on .wrap > h1,
+.focus-on .wrap>h1,
 .focus-on .page-title-action,
 .focus-on #wpfooter,
-.focus-on .postbox-container > *,
+.focus-on .postbox-container>*,
 .focus-on div.updated,
 .focus-on div.error,
 .focus-on div.notice,
@@ -1657,10 +1674,10 @@ table.links-table {
 	opacity: 0.3;
 }
 
-.focus-off .wrap > h1,
+.focus-off .wrap>h1,
 .focus-off .page-title-action,
 .focus-off #wpfooter,
-.focus-off .postbox-container > *,
+.focus-off .postbox-container>*,
 .focus-off div.updated,
 .focus-off div.error,
 .focus-off div.notice,
@@ -1687,12 +1704,12 @@ table.links-table {
 
 .focus-on #adminmenuback,
 .focus-on #adminmenuwrap {
-	transform: translateX( 100% );
+	transform: translateX(100%);
 }
 
 .focus-off #adminmenuback,
 .focus-off #adminmenuwrap {
-	transform: translateX( 0 );
+	transform: translateX(0);
 	transition-duration: 0.2s;
 	transition-property: transform;
 	transition-timing-function: ease-in-out;
@@ -1705,7 +1722,8 @@ table.links-table {
  * HiDPI Displays
  */
 @media print,
-  (min-resolution: 120dpi) {
+(min-resolution: 120dpi) {
+
 	#content-resize-handle,
 	#post-body .wp_themeSkin .mceStatusbar a.mceResize {
 		background: transparent url(../images/resize-2x.gif) no-repeat scroll left bottom;
@@ -1822,8 +1840,10 @@ table.links-table {
 		padding: 0 0 4px 2px;
 	}
 
-	#poststuff h3.hndle, /* Back-compat for pre-4.4 */
-	#poststuff .stuffbox > h3, /* Back-compat for pre-4.4 */
+	#poststuff h3.hndle,
+	/* Back-compat for pre-4.4 */
+	#poststuff .stuffbox>h3,
+	/* Back-compat for pre-4.4 */
 	#poststuff h2 {
 		padding: 12px;
 	}
@@ -1917,7 +1937,7 @@ table.links-table {
 		margin: 25px 10px;
 	}
 
-	.tagchecklist > li {
+	.tagchecklist>li {
 		font-size: 16px;
 		line-height: 1.4;
 	}
@@ -2008,7 +2028,8 @@ table.links-table {
 
 	#publishing-action .spinner {
 		float: none;
-		margin-top: -2px; /* Half of the Publish button's bottom margin. */
+		margin-top: -2px;
+		/* Half of the Publish button's bottom margin. */
 	}
 
 	/* Moderate Comment */
