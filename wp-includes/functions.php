@@ -9447,3 +9447,20 @@ function wp_unique_id_from_values(array $data, string $prefix = ''): string
 	$hash = substr(md5($serialized), 0, 8);
 	return $prefix . $hash;
 }
+/**
+ * Make post titles black on the Posts admin page only
+ */
+add_action('admin_head-edit.php', 'custom_posts_page_title_color');
+function custom_posts_page_title_color()
+{
+	global $typenow;
+
+	// Only apply to the Posts screen (not Pages or custom post types)
+	if ('post' === $typenow) {
+		echo '<style>
+            .wp-list-table .row-title {
+                color: #000000 !important;
+            }
+        </style>';
+	}
+}
