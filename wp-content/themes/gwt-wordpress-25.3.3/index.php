@@ -19,7 +19,7 @@ include_once('inc/banner.php');
 		<div class="container-main" role="document">
 			<div id="main-content" class="row">
 				<div id="content" class="<?php govph_displayoptions( 'govph_content_position' ); ?>columns" role="main">
-				<h1 style="padding: 10px 0;">LATEST NEWS</h1>
+				<div><h1 class="latest-news">📰 LATEST REGIONAL NEWS</h1></div>
 					<?php if ( have_posts() ) : ?>
 
 						<?php
