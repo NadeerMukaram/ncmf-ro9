@@ -353,7 +353,7 @@ h6 {font-size: 0.63rem;}
     border-radius: 6px;
     color: white;
     font-size: 14px;
-    width: fit-content; /* adjusts to content */
+    width: auto; /* adjusts to content */
 }
 
 
