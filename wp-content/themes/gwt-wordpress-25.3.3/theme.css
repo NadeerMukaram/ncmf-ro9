@@ -388,7 +388,11 @@ h6 {font-size: 0.63rem;}
  * 11.0 - Content
  */
 
-h1.logo img { font-size: 1rem; }
+h1.logo img { 
+	font-size: 1rem; 
+	width:70%;
+}
+
 #main-content {
 	padding: 1rem 0;
 }
